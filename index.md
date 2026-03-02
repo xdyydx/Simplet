@@ -5,5 +5,5 @@ layout: default
 
 <div height: 1000px>  
 
-<\div>
+</div>
 <h4>Test</h4>

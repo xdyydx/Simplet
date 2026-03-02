@@ -1,0 +1,65 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      部署于 GitHub Pages · 作者：{{ site.author }}
+    </div>
+
+    <div class="footer-icons">
+      {% if site.email %}
+      <a class="icon-link" href="mailto:{{ site.email }}" title="Email">
+        <!-- envelope SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 6.5C3 5.67157 3.67157 5 4.5 5H19.5C20.3284 5 21 5.67157 21 6.5V17.5C21 18.3284 20.3284 19 19.5 19H4.5C3.67157 19 3 18.3284 3 17.5V6.5Z" stroke="#333" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 6.5L12 12.5L3 6.5" stroke="#333" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      {% endif %}
+
+      {% if site.github %}
+      <a class="icon-link" href="{{ site.github }}" title="GitHub" target="_blank" rel="noopener noreferrer">
+        <!-- github SVG -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2C7.581 2 4 5.581 4 10c0 3.535 2.292 6.532 5.47 7.584.4.074.546-.174.546-.386 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.727-.497.055-.487.055-.487.804.057 1.227.826 1.227.826.714 1.223 1.873.87 2.33.665.073-.517.28-.87.508-1.07-1.777-.201-3.644-.888-3.644-3.954 0-.874.312-1.588.824-2.149-.083-.202-.357-1.016.078-2.118 0 0 .672-.215 2.2.82A7.67 7.67 0 0112 6.844c.68.003 1.366.092 2.005.27 1.526-1.035 2.196-.82 2.196-.82.438 1.102.164 1.916.08 2.118.513.561.823 1.275.823 2.149 0 3.073-1.87 3.75-3.653 3.947.288.248.545.737.545 1.486 0 1.073-.01 1.936-.01 2.2 0 .214.144.463.55.384C17.708 16.531 20 13.535 20 10c0-4.419-3.581-8-8-8z" fill="#333"/>
+        </svg>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <style>
+    .site-footer {
+      background: #f2f2f2;
+      color: #222;
+      font-family: "Microsoft YaHei", "微软雅黑", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      min-height: 48px;
+    }
+
+    .footer-left {
+      line-height: 48px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .footer-icons {
+      position: absolute;
+      right: 10px;
+      bottom: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .icon-link svg { display: block; }
+    .icon-link { display: inline-block; width: 28px; height: 28px; }
+    .icon-link:hover svg path { opacity: 0.8; }
+  </style>
+</footer>

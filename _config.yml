@@ -1,5 +1,10 @@
 title: Simplet
 description: A modal of web on Github Pages
 img_all_show: False
-color_theme: blue
+color_theme:
+  light: (200,200,30,1)
+  dark: (150,150,10,1)
 relativepath: /Simplet
+author: xdyydx
+github: https://github.com/xdyydx/
+email: jianghaoran@westlake.edu.cn
