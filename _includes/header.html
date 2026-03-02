@@ -1,6 +1,6 @@
 ---
 ---
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{ site.relativepath }}/favicon.ico" type="image/x-icon">
 
 {% assign color_theme = site.color_theme %}
 {% assign img_all_show = site.img_all_show %}
@@ -107,7 +107,7 @@
 <!-- 头部背景图片 -->
 <div class="header-image-wrapper">
   <div class="header-image-container">
-    <img src="/_img/headerimg.png" alt="Header Image" class="header-image" />
+    <img src="{{ site.relativepath }}/_img/headerimg.png" alt="Header Image" class="header-image" />
     <div class="header-text-overlay">
       <h1>{{ site.title }}</h1>
       <p>{{ site.description }}</p>
@@ -117,5 +117,5 @@
 
 <!-- 导航栏 -->
 <nav class="navbar">
-  <a href="/">首页</a>
+  <a href="{{ site.relativepath }}/">首页</a>
 </nav>
